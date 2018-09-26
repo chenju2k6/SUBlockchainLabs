@@ -218,3 +218,6 @@ personal.unlockAccount(eth.accounts[0])
     - Answer: One of possible reasons is your VM/OS does not have enough memory. We recommend at least 4 GB for mining. If you don't run mining, you don't have to allocate large memory for this lab.
 - Q3: When my terminal crashes in VM (e.g., during mining),  I cannot restart the `geth` properly.
     - Answer: You can restart the VM to get around this issue. (Terminal crash may mess up network stack in your VM which `geth` depends on).
+    
+- Q4: How to check if the mining is working?
+    - Answer: You could check the status by running "eth.mining", which returns either "true" or "false" to indicate if the node is mining or not. (Note: "miner.getHashrate()" may return "0" even if the mining is on-going)
